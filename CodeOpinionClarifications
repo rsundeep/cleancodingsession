@@ -5,7 +5,8 @@ Q: opinion on the below code mentioned in CaseStudy.md in https://github.com/ven
 https://en.m.wikipedia.org/wiki/File:25_pair_color_code_chart.svg
 
 My Opinion:
-Can cause out of bounds issue in case the boundary condition in for loop is not properly done
+Can cause out of bounds issue exception which leads to crash in case the boundary condition in for loop is not properly done
+Appropriate exceptions are not handled properly
 The size of the array is just counted manually which is prone to issues
 The size condition in two for loops is kept as 5 which is confusing for a new programmer of how the value 5 is derived
 For each j times, each element gets printed 5 times which might not be the intention of the coder/developer
