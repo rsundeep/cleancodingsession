@@ -7,7 +7,7 @@ https://en.m.wikipedia.org/wiki/File:25_pair_color_code_chart.svg
 My Opinion:
 Can cause out of bounds issue in case the boundary condition in for loop is not properly done
 The size of the array is just counted manually which is prone to issues
-The size condition in two for loops is manually kept as 5 which is confusing for a new programmer
+The size condition in two for loops is kept as 5 which is confusing for a new programmer of how the value 5 is derived
 For each j times, each element gets printed 5 times
 Code is bit complex to visualize and find the actual issue.
 More in a traditional c style
