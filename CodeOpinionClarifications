@@ -6,3 +6,5 @@ Opinion:
 for each j times, each element gets printed 5 times
 code is bit complex to visualize and find the actual issue.
 more in a traditional c style
+can cause out of bounds issue in case the boundary condition in for loop is not properly done
+The size of the array is just counted manually which would cause a problem if the size is more
