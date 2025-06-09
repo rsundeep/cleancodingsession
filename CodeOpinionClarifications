@@ -9,6 +9,5 @@ Can cause out of bounds issue exception which leads to crash in case the boundar
 Appropriate exceptions are not handled properly
 The size of the array is just counted manually which is prone to issues
 The size condition in two for loops is kept as 5 which is confusing for a new programmer of how the value 5 is derived
-For each j times, each element gets printed 5 times which might not be the intention of the coder/developer
 Code is bit complex to visualize and find the actual issue.
-More in a traditional c style
+variable names are i, j which are difficult to understand instead of appropriate names
