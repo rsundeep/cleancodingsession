@@ -5,9 +5,9 @@ Q: opinion on the below code mentioned in CaseStudy.md in https://github.com/ven
 https://en.m.wikipedia.org/wiki/File:25_pair_color_code_chart.svg
 
 My Opinion:
-
-can cause out of bounds issue in case the boundary condition in for loop is not properly done
+Can cause out of bounds issue in case the boundary condition in for loop is not properly done
 The size of the array is just counted manually which would cause a problem if the size is more
-for each j times, each element gets printed 5 times
-code is bit complex to visualize and find the actual issue.
-more in a traditional c style
+The size condition in two for loops is manually kept as 5 which is confusing for a new programmer
+For each j times, each element gets printed 5 times
+Code is bit complex to visualize and find the actual issue.
+More in a traditional c style
