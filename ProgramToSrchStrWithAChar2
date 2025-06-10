@@ -1,0 +1,51 @@
+//copilot generated code
+// step 1: consider array of names and write a program to search a string starts with character s
+// step 2: refactor code for unit testability
+
+#include <vector>
+#include <string>
+#include <iostream>
+
+struct ColorPair {
+    int index;
+    std::string majorColor;
+    std::string minorColor;
+};
+
+// Function to generate the color map
+std::vector<ColorPair> generateColorMap() {
+    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    std::vector<ColorPair> colorMap;
+
+    int majorSize = sizeof(majorColor) / sizeof(majorColor[0]);
+    int minorSize = sizeof(minorColor) / sizeof(minorColor[0]);
+
+    for (int i = 0; i < majorSize; i++) {
+        for (int j = 0; j < minorSize; j++) {
+            colorMap.push_back({i * minorSize + j, majorColor[i], minorColor[j]});
+        }
+    }
+    return colorMap;
+}
+
+// Function to print the color map
+void printColorMap(const std::vector<ColorPair>& colorMap) {
+    for (const auto& pair : colorMap) {
+        printf("%d | %s | %s\n", pair.index, pair.majorColor.c_str(), pair.minorColor.c_str());
+    }
+}
+
+int main() {
+    auto colorMap = generateColorMap();
+    printColorMap(colorMap);
+
+    // Validate the size of the color map
+    if (colorMap.size() == 25) {
+        printf("All is well (maybe!)\n");
+    } else {
+        printf("Something went wrong!\n");
+    }
+
+    return 0;
+}
