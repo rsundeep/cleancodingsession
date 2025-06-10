@@ -1,0 +1,44 @@
+/* git copilot generated one
+	a) give prompt in git copilot : consider array of names and write a program to search a string starts with character s
+	b) now give the prompt : refactor code for unit testability
+  c) now give prompt : refactored above functional programming version 
+  d) now give prompt : generate the code to add a function in functional programming paradigm to search a function to search a character which ends with a character
+*/
+
+#include <stdio.h>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+// Function to search for names ending with a given character
+std::vector<std::string> searchNamesEndingWith(
+    const std::vector<std::string>& names, char searchChar) {
+    std::vector<std::string> result;
+    for (const auto& name : names) {
+        if (!name.empty() && (name.back() == searchChar || name.back() == toupper(searchChar))) {
+            result.push_back(name);
+        }
+    }
+    return result;
+}
+
+// Function to print the names
+void printNames(const std::vector<std::string>& names) {
+    for (const auto& name : names) {
+        printf("%s\n", name.c_str());
+    }
+}
+
+int main() {
+    std::vector<std::string> names = {"Sam", "John", "Sara", "Michael", "Steve", "Alice", "susan"};
+
+    // Search for names ending with 'n'
+    char searchChar = 'n';
+    auto filteredNames = searchNamesEndingWith(names, searchChar);
+
+    // Print the filtered names
+    printf("Names ending with '%c':\n", searchChar);
+    printNames(filteredNames);
+
+    return 0;
+}
