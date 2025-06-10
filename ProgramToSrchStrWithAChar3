@@ -1,0 +1,43 @@
+/* git copilot generated one
+		      a) give prompt eg: in git copilot : consider array of names and write a program to search a string starts with character s
+		      b) now give the prompt : refactor code for unit testability
+          c) refactored above functional programming version 
+*/
+
+#include <stdio.h>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+// Function to search for names starting with a given character
+std::vector<std::string> searchNamesStartingWith(
+    const std::vector<std::string>& names, char searchChar) {
+    std::vector<std::string> result;
+    for (const auto& name : names) {
+        if (!name.empty() && (name[0] == searchChar || name[0] == toupper(searchChar))) {
+            result.push_back(name);
+        }
+    }
+    return result;
+}
+
+// Function to print the names
+void printNames(const std::vector<std::string>& names) {
+    for (const auto& name : names) {
+        printf("%s\n", name.c_str());
+    }
+}
+
+int main() {
+    std::vector<std::string> names = {"Sam", "John", "Sara", "Michael", "Steve", "Alice", "susan"};
+
+    // Search for names starting with 's'
+    char searchChar = 's';
+    auto filteredNames = searchNamesStartingWith(names, searchChar);
+
+    // Print the filtered names
+    printf("Names starting with '%c':\n", searchChar);
+    printNames(filteredNames);
+
+    return 0;
+}
