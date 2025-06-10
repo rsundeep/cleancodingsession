@@ -1,3 +1,6 @@
+//copilot generated code.
+//Q: consider array of names and write a program to search a string starts with character s
+
 #include <iostream>
 #include <vector>
 #include <string>
