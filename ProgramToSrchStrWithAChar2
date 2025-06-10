@@ -1,6 +1,6 @@
-//copilot generated code
-// step 1: consider array of names and write a program to search a string starts with character s
-// step 2: refactor code for unit testability
+// copilot generated code
+// prompt in step 1: consider array of names and write a program to search a string starts with character s
+// prompt in step 2: refactor code for unit testability
 
 #include <vector>
 #include <string>
