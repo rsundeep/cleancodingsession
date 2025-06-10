@@ -1,7 +1,7 @@
 /* git copilot generated one
 	a) give prompt in git copilot : consider array of names and write a program to search a string starts with character s
 	b) now give the prompt : refactor code for unit testability
-        c) now give prompt : refactored above functional programming version 
+        c) now give prompt : refactor above functional programming version 
 */
 
 #include <stdio.h>
